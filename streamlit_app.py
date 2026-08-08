@@ -7,7 +7,8 @@ try:
     import matplotlib.pyplot as plt
     HAS_MATPLOTLIB = True
 except Exception:
-    HAS_MATPLOTLIB = False
+   sys.path.insert(0, os.path.dirname(__file__))
+from valuation_engine import extract_financial_data, ValuationEngine, get_company_lookup_database, resolve_ticker_symbol
 
 import streamlit as st
 
