@@ -1,0 +1,122 @@
+HUONG DAN SU DUNG VNSTOCK APP
+================================
+
+APP NAY DUNG DE LAM GI?
+- Tra cuu gia co phieu, bao cao tai chinh, thong tin cong ty cua
+  cac ma chung khoan Viet Nam (Tab 1).
+- Thong ke 1 hoac nhieu chi tieu tai chinh cho TOAN BO cong ty
+  trong 1 nganh nghe, xem duoc nhieu nam cung luc (Tab 2 - MOI).
+- Ban chi can go tu khoa va bam nut, khong can biet code.
+
+--------------------------------------------------
+BUOC 1: CHUAN BI
+--------------------------------------------------
+1. Dam bao may da cai Python (ban co the da cai roi vi truoc do
+   da chay lenh "pip install vnstock" thanh cong).
+   Neu chua co Python: tai tai https://www.python.org/downloads/
+   Khi cai, nho tick chon "Add Python to PATH".
+
+2. Copy toan bo thu muc "vnstock_app" nay vao mot noi de nho,
+   vi du: D:\vnstock_app
+
+--------------------------------------------------
+BUOC 2: MO APP
+--------------------------------------------------
+- Vao thu muc vnstock_app, double-click vao file:
+
+      Mo_App.bat
+
+- Lan dau chay se tu dong kiem tra va cai thu vien vnstock neu
+  chua co (co the mat 1-2 phut). Cac lan sau se mo nhanh hon.
+
+- Mot cua so den (Command Prompt) se hien ra de xu ly, ke tiep
+  la giao dien app hien ra, co 2 tab tren cung. KHONG DONG cua
+  so den do trong luc dung app - do la noi hien thong bao loi
+  chi tiet neu co van de.
+
+--------------------------------------------------
+TAB 1: TRA CUU 1 MA CO PHIEU
+--------------------------------------------------
+1. Nhap MA CO PHIEU, vi du: VNM, FPT, ACB, VCB, DHG, IMP, DBD...
+2. Neu muon xem gia lich su, chon them khoang ngay.
+3. Chon "Ky bao cao": year (nam) hoac quarter (quy).
+4. Bam mot trong 6 nut chuc nang (Gia lich su, Thong tin cong ty,
+   Bang can doi ke toan, Ket qua kinh doanh, Luu chuyen tien te,
+   Chi so tai chinh).
+5. Du lieu hien ra trong bang o giua man hinh.
+6. Bam "Xuat ra Excel" hoac "Xuat ra CSV" o duoi cung de luu.
+
+--------------------------------------------------
+TAB 2: THONG KE THEO NGANH (TINH NANG MOI)
+--------------------------------------------------
+Dung khi ban muon so sanh 1 chi tieu tai chinh giua NHIEU cong ty
+cung nganh, qua nhieu nam.
+
+Cach dung:
+1. O "Nganh nghe": go ten nganh, vi du:
+      Duoc pham
+      Ngan hang
+      Bat dong san
+   (khong can go dau chinh xac, app tu tim gan giong)
+
+2. O "Chi tieu": go ten chi tieu trong bao cao KQKD ma ban muon
+   lay, vi du:
+      Doanh thu thuan
+   Neu muon lay nhieu chi tieu cung luc, phan cach bang dau phay:
+      Doanh thu thuan, Loi nhuan sau thue, Loi nhuan gop
+
+3. Chon "Ky bao cao": year hoac quarter.
+
+4. "Toi da so cong ty xu ly": mac dinh 30. Neu nganh co nhieu
+   cong ty va ban muon lay het, tang so nay len (vi du 100).
+   So lon hon se chay lau hon (moi cong ty can 1 lan goi du lieu).
+
+5. Bam "Thong ke theo nganh". App se:
+   - Tim danh sach cong ty trong nganh do
+   - Lay bao cao KQKD cua tung cong ty
+   - Tim chi tieu ban yeu cau trong tung bao cao
+   - Ghep lai thanh 1 bang: Ma CP | Ten cong ty | Chi tieu | 2021 | 2022 | 2023...
+
+6. Ket qua hien trong bang, xuat ra Excel de xem/phan tich them.
+
+Luu y:
+- Qua trinh nay co the mat vai chuc giay den vai phut tuy so
+  luong cong ty, vi phai lay du lieu tung cong ty mot.
+- Dong trang thai (mau xanh, phia tren bang) se bao dang xu ly
+  cong ty nao, den dau roi.
+- Neu 1 vai cong ty khong lay duoc du lieu (vi du: moi len san,
+  bao cao khong day du), app se tu bo qua va van tra ve ket qua
+  cho cac cong ty con lai. Chi tiet cac truong hop bi bo qua duoc
+  in trong cua so den (Command Prompt).
+- Ten chi tieu ban go khong can trung 100% - app tu do tim dong co
+  TEN CHI TIEU chua tu khoa ban go (vi du go "doanh thu thuan" se
+  khop dong "Doanh thu thuan ve ban hang va cung cap dich vu").
+  Neu khong tim thay, thu go tu khoa ngan hon hoac khac di.
+- Neu go sai ten nganh, thong bao loi se hien mot vai ten nganh
+  co thuc trong du lieu de ban tham khao va go lai cho dung.
+
+--------------------------------------------------
+CAC LOI THUONG GAP
+--------------------------------------------------
+- "Chua co thu vien vnstock": Mo_App.bat se tu cai, cho vai phut.
+  Neu van loi, mo Command Prompt (CMD) go tay:
+      pip install -U vnstock
+
+- "Khong lay duoc du lieu": kiem tra lai ma co phieu/tu khoa co
+  dung khong, va may co dang ket noi Internet khong.
+
+- Tab 2 bao "Khong xac dinh duoc cot nganh...": co nghia la phien
+  ban vnstock hien tai tra ve du lieu voi cau truc khac so voi du
+  kien. Chup lai thong bao loi day du (bao gom danh sach "Cac cot
+  co san") va gui lai de duoc dieu chinh app.
+
+- Cua so app khong hien ra: thu mo lai Mo_App.bat, doc ky thong
+  bao loi trong cua so den (mau do) va gui lai cho nguoi ho tro.
+
+--------------------------------------------------
+LUU Y
+--------------------------------------------------
+- Du lieu do vnstock cung cap chi phuc vu tham khao/nghien cuu,
+  KHONG dung de ra quyet dinh giao dich khi chua kiem tra lai.
+- Vnstock co giay phep danh cho ca nhan/nghien cuu, khong dung
+  cho muc dich thuong mai neu chua duoc tac gia cho phep.
