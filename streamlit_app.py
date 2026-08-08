@@ -3,7 +3,12 @@ import os
 import io
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+try:
+    import matplotlib.pyplot as plt
+    HAS_MATPLOTLIB = True
+except Exception:
+    HAS_MATPLOTLIB = False
+
 import streamlit as st
 
 # Thêm đường dẫn tới vnstock_app
