@@ -1,0 +1,6 @@
+vnstock>=4.0.5
+vnai>=2.5.6
+pandas
+matplotlib
+pillow
+streamlit
