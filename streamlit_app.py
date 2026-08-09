@@ -3,19 +3,17 @@ import os
 import io
 import pandas as pd
 import numpy as np
+import streamlit as st
+
 try:
     import matplotlib.pyplot as plt
     HAS_MATPLOTLIB = True
 except Exception:
-   sys.path.insert(0, os.path.dirname(__file__))
-from valuation_engine import extract_financial_data, ValuationEngine, get_company_lookup_database, resolve_ticker_symbol
+    HAS_MATPLOTLIB = False
 
-import streamlit as st
-
-# Thêm đường dẫn tới vnstock_app
+# Import bộ máy định giá độc lập (0% Tkinter)
 sys.path.insert(0, os.path.dirname(__file__))
-from vnstock_app import extract_financial_data, ValuationEngine
-
+from valuation_engine import extract_financial_data, ValuationEngine, get_company_lookup_database, resolve_ticker_symbol
 # --- PAGE CONFIG FOR MOBILE ---
 st.set_page_config(
     page_title="Vnstock Định Giá Doanh Nghiệp (Mobile & iPad)",
